@@ -1,0 +1,509 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 0;
+}
+body{
+text-align: center;
+}
+.navbar{
+
+}
+.contents{
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo{
+   border-radius: 50%; 
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.logo-text {
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  color: red;
+}
+nav{
+  background-color: black;
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+.second_content{
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  padding-top: 1.5%;
+}
+a{
+ color: white;
+ text-decoration: none;
+
+}
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+.hero{
+gap: 10%;
+  display: flex;
+
+  align-items: center;
+ justify-content: center;  
+  text-align: center;
+  background-color: whitesmoke;
+  background-size: cover;
+}
+.btn{
+  background-color: black;
+  color: white;
+  width: 10%;
+  padding: 0.5%;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+.apply_now{
+  background-color: black;
+  color: white;
+  padding: 0.5%;
+  border-radius: 15px;
+  width: 25%;
+
+}
+.left{
+  width: 30rem;
+}
+.apply_now:hover{
+  text-decoration: none;
+}
+.first_image{
+  height: 30rem;
+  width: 100%;
+}
+.hidden{
+  display: none;
+}
+.hidden:hover{
+  display: block;
+}
+.start_1{
+  width: 30%;
+  height: 15rem;
+
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgb(233, 228, 228);
+  background-image: url(../images/AI4.PNG);
+  background-blend-mode: multiply;
+  color: white;
+  background-size: cover;
+}
+.start_1:hover{
+  background-color: rgb(80, 75, 75);
+}
+.start_2{
+  width: 30%;
+  height: 15rem;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgb(131, 125, 125);
+  background-image: url(../images/AI2.PNG);
+  background-blend-mode: multiply;
+  color: white;
+  background-size: cover;
+}
+.start_2:hover{
+  background-color: rgb(80, 75, 75);
+}
+.start_3{
+  width: 30%;
+  height: 15rem;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgb(116, 103, 103);
+  background-image: url(../images/larry.jpg);
+  background-blend-mode: multiply;
+  color: white;
+  background-size: cover;
+}
+.start_3:hover{
+  background-color: rgb(80, 75, 75); 
+}
+.start_4{
+  width: 30%;
+  height: 15rem;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgb(133, 130, 130);
+  background-image:url(../images/cap.PNG) ;
+  background-blend-mode: multiply;
+  color: white;
+  background-size: cover;
+}
+.start_4:hover{
+  background-color: rgb(80, 75, 75); 
+}
+.programs{
+text-align: center;
+}
+.set_1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+footer{
+ background-color: grey;
+  width: 100%;
+  height: 10rem;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.sm_links{
+  display: grid;
+  
+}
+#link{
+  color: black;
+}
+.ultimate{
+  background-color: rgb(74, 70, 70);
+  background-image: url(../images/7.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  color: white;
+  width: 100%;
+  height: 35rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+.mission_1{
+  text-decoration: underline;
+}
+.inner{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+}
+/* .prince{
+  background-image: url(../images/me.png);
+  background-color: rgba(8, 6, 6, 0.268);
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-clip: border-box;
+  clip-path: polygon(20%,100%,100%,0%);
+} */
+ .team{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+
+ }
+ .CEO{
+  display: flex;
+ }
+.team_1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.partnership_announcement{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+.statement{
+  font-size: 20px;
+}
+.des_pic_1{
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+}
+.des_pic_2{
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+}
+.first_partner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.second_partner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  gap: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.main_box{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  background-color: white;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.program_1{
+  width: 400px;
+  height: 400px;
+  background-color: whitesmoke;
+text-align: center;
+font-size: 18px;
+padding-left: 2%;
+color: gray;
+}
+.course_1{
+  background-color: black;
+  width: 400px;
+  text-align: center;
+}
+.course_name{
+  color: black;
+}
+.top_circle{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course_img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+
+}
+.partner_button{
+  background-color: black;
+  padding: 1%;
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px 1px red;
+
+}
+.program_2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: whitesmoke;
+  width: 400px;
+  height: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* MEDIA QERIES */
+  @media (max-width: 480px) {
+    /* styles for small mobile devices */
+    body{
+background-color: red;
+    }
+.hero{
+  display: grid;
+}
+nav{
+  
+}
+.second_content{
+  display: none;
+}
+.set_1{
+  display: grid;
+}
+.ultimate{
+  display: grid;
+}
+.CEO{
+  display: grid;
+}
+.team_1{
+  display: grid;
+}
+    }
+    
+  
+  
+  
+  /* - Medium (481px - 640px): */
+  
+  @media (min-width: 481px) and (max-width: 640px) {
+    /* styles for medium mobile devices */
+    body{
+   background-color: lightgoldenrodyellow;
+    }
+
+
+  }
+  
+  
+  /* - Large (641px - 768px): */
+  
+  @media (min-width: 641px) and (max-width: 768px) {
+    /* styles for large mobile devices */
+    body{
+     background-color: pink;
+    }
+
+  
+  }
+  
+  
+  /* Tablets
+  
+  - Small (769px - 960px): */
+  
+  @media (min-width: 769px) and (max-width: 960px) {
+    /* styles for small tablets */
+    body{
+   
+    }
+
+
+  }
+  
+  
+  /* - Medium (961px - 1024px): */
+  
+  @media (min-width: 961px) and (max-width: 1024px) {
+    /* styles for medium tablets */
+    body{
+
+    }
+
+  }
+  
+  
+  /* - Large (1025px - 1280px): */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    /* styles for large tablets */
+    body{
+     
+    }
+
+  }
+  
+  
+  /* Desktops */
+  
+  /* - Small (1281px - 1440px): */
+  
+   @media (min-width: 1281px) and (max-width: 1440px) {
+    /* styles for small desktops */
+    body{
+   
+    }
+  
+  }
+  
+  
+  /* - Medium (1441px - 1680px): */
+  
+  @media (min-width: 1441px) and (max-width: 1680px) {
+    /* styles for medium desktops */
+   
+  }
+  
+  
+  /* - Large (1681px - 1920px): */
+  
+  @media (min-width: 1681px) and (max-width: 1920px) {
+    /* styles for large desktops */
+    body{
+     
+    }
+  }
+  
+  
+  /* - Extra Large (1921px and up): */
+  
+  @media (min-width: 1921px) {
+    /* styles for extra large desktops */
+  }
+  
+  /* 
+  Other Devices
+  
+  - Wearables (240px - 320px): */
+  
+  @media (max-width: 320px) {
+    /* styles for wearables */
+  }
+  
+  
+  /* - Gaming Consoles (720px - 1080px): */
+  
+  @media (min-width: 720px) and (max-width: 1080px) {
+    /* styles for gaming consoles */
+  }
+   
+ 
+  
+  
+  
+  
+
