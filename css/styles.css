@@ -360,7 +360,7 @@ color: gray;
   @media (max-width: 480px) {
     /* styles for small mobile devices */
     body{
-background-color: red;
+
     }
 .hero{
   display: grid;
