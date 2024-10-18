@@ -140,72 +140,11 @@ transition: 2s ease-in-out;
   background: black;
   
 }
-.start_1{
-  width: 30%;
-  height: 15rem;
-  text-align: center;
-  border-radius: 15px;
-  background-color: rgb(233, 228, 228);
-  background-image: url(../images/AI4.PNG);
-  background-blend-mode: multiply;
-  color: white;
-  background-size: cover;
-}
-.start_1:hover{
-  background-color: rgb(80, 75, 75);
-}
-.start_2{
-  width: 30%;
-  height: 15rem;
-  text-align: center;
-  border-radius: 15px;
-  background-color: rgb(131, 125, 125);
-  background-image: url(../images/AI2.PNG);
-  background-blend-mode: multiply;
-  color: white;
-  background-size: cover;
-}
-.start_2:hover{
-  background-color: rgb(80, 75, 75);
-}
-.start_3{
-  width: 30%;
-  height: 15rem;
-  text-align: center;
-  border-radius: 15px;
-  background-color: rgb(116, 103, 103);
-  background-image: url(../images/larry.jpg);
-  background-blend-mode: multiply;
-  color: white;
-  background-size: cover;
-}
-.start_3:hover{
-  background-color: rgb(80, 75, 75); 
-}
-.start_4{
-  width: 30%;
-  height: 15rem;
-  text-align: center;
-  border-radius: 15px;
-  background-color: rgb(133, 130, 130);
-  background-image:url(../images/cap.PNG) ;
-  background-blend-mode: multiply;
-  color: white;
-  background-size: cover;
-}
-.start_4:hover{
-  background-color: rgb(80, 75, 75); 
-}
+
 .programs{
 text-align: center;
 }
-.set_1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly;
-  
-}
+
 footer{
  background-color: grey;
   width: 100%;
@@ -245,6 +184,7 @@ footer{
 .mission_1{
   text-decoration: underline;
 }
+
 .inner{
   display: flex;
   flex-direction: column;
@@ -260,6 +200,152 @@ footer{
  .CEO{
   display: flex;
  }
+ trial 
+ .identity {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  animation: text-animation 5s forwards;
+  transform: translateX(-100%);
+  position: relative;
+}
+
+.identity_pic {
+  animation: image-animation 5s forwards;
+  transform: translateX(100%);
+}
+
+.dentity_pic img {
+  width: 300px; /* adjust image width */
+  height: 200px; /* adjust image height */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@keyframes text-animation {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes image-animation {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* <!-- rotating images  --> */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  perspective: 1000px;
+  border-radius: 10px;
+  margin-left: 5%;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.card .flip {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  
+}
+
+.card:hover .flip {
+  transform: rotateY(180deg);
+}
+
+.card .front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-size: cover;
+  background-position: center;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Image 1 */
+.card1 .front {
+  background-image: url(../images/AI8.PNG);
+ 
+  color: white;
+  text-align: center;
+ font-size: 25px;
+}
+
+.card1 .back {
+  background-image: linear-gradient(160deg,grey,whitesmoke);
+}
+
+/* Image 2 */
+.card2 .front {
+  background-image: url(../images/16.PNG);
+ font-size: 25px;
+}
+
+.card2 .back {
+  background-image: linear-gradient(160deg,grey,whitesmoke);
+}
+
+/* Image 3 */
+.card3 .front {
+  background-image: url(../images/cap.PNG);
+}
+
+.card3 .back {
+  background-image: linear-gradient(160deg,grey,whitesmoke);
+}
+
+/* Image 4 */
+.card4 .front {
+  background-image: url(../images/AI5.PNG);
+}
+
+.card4 .back {
+  background-image: linear-gradient(160deg,grey,whitesmoke);
+}
+
+
+
+
+
+
+
+
+
+
+
 .team_1{
   display: flex;
   align-items: center;
