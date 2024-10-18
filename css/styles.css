@@ -32,6 +32,15 @@ nav{
   position: fixed;
   width: 100%;
 }
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid red;
+  color: inherit; /* Keep text color unchanged */
+}
+
 .second_content{
   list-style: none;
   display: flex;
@@ -104,6 +113,7 @@ transition: 2s ease-in-out;
   cursor: pointer;
 
 }
+
 .apply_now{
   background-color: black;
   color: white;
@@ -363,10 +373,296 @@ margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* trial  */
+  position: relative;
+  opacity: 0;
+  animation: hero_course 5s forwards;
+}
+/* trial  */
+@keyframes hero_course{
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .course_content{
   padding-left: 15%;
 }
+/* self writing texts */
+.fly-in {
+
+}
+
+
+/* forms at the partnership page  */
+
+/* Forms container */
+.forms-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Forms */
+.login-form, .register-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+/* Links */
+.login-link, .register-link {
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+  padding: 0.5%;
+  box-shadow: 1px 1px 1px 1px black;
+  border-bottom: 2px solid transparent;
+
+}
+
+/* Active link styles */
+.login-link:active, .register-link:active {
+  border-bottom: 2px solid red;
+}
+
+/* Show login form when link is clicked */
+.login-link[href="#login"]:target + .login-form {
+  display: block;
+}
+
+/* Show register form when link is clicked */
+.register-link[href="#register"]:target + .register-form {
+  display: block;
+}
+
+/* Active form styles */
+.login-form:target, .register-form:target {
+  display: block;
+  /* border: 1px solid red; */
+  width: 30%;
+  height: 25rem;
+  background-color: whitesmoke;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  margin-top: 15%;
+  border-radius: 15px;
+}
+
+
+/* Loading image styles */
+.loading-image {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Success message styles */
+.success-message {
+  display: none;
+  color: green;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Check symbol styles */
+.check-symbol {
+  display: none;
+  color: green;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Back link styles */
+.back-link {
+
+  margin-top: 10px;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Submit button styles */
+.submit-button:active + .loading-image {
+  display: block;
+}
+.submit-button{
+  background-color: black;
+  color: white;
+  width: 50%;
+  padding: 0.3%;
+  border-radius: 10px;
+}
+.loading-image.fade-out {
+  animation: fadeOut 10s forwards;
+}
+
+.loading-image.fade-out + .success-message {
+  display: block;
+  animation: fadeIn 2s forwards;
+}
+
+.loading-image.fade-out + .success-message + .check-symbol {
+  display: block;
+  animation: fadeIn 2s forwards;
+}
+
+.loading-image.fade-out + .success-message + .check-symbol + .back-link {
+  display: block;
+  animation: fadeIn 2s forwards;
+  font-size: 25px;
+  color: green;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.intro{
+  font-size: 25px;
+  
+  font-weight: bold;
+  font-style: italic;
+}
+.investor_form{
+ padding-bottom: 10%;
+ padding-top: 5%;
+}
+  #textarea{
+    height:50%;
+  }
+input{
+  width: 70%;
+  background: transparent;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: blue;
+}
+textarea{
+  width: 70%;
+  border-radius: 5px;
+  background: transparent;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  color: blue;
+}
+button{
+  cursor: pointer;
+}
+.submit-button_1{
+margin-top: -5rem;
+}
+
+  /* trial on the apply page  */
+  .image-container {
+    /* position: relative; */
+    width: 300px; /* adjust width */
+    height: 200px; /* adjust height */
+    perspective: 1000px;
+  }
+  
+  
+  .image-card {
+   /* position: relative; */
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .image-card .front {
+     position: absolute; 
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-image: url(../images/AI8.PNG); /* front image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(7, 0, 0, 0.586);
+    background-blend-mode: multiply;
+    font-size: 24px;
+  }
+  
+  .image-card .back {
+     position: absolute; 
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-size: cover;
+    /* background-image: url(../images/e.jpg); */
+     /* back image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    background-color: black;
+    text-align: center;
+    padding: 0.5%;
+  }
+  
+  .image-container:hover .image-card {
+    transform: rotateY(180deg);
+  }
+  .apply_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+/* progress bar  */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background-color: #007bff;
+  z-index: 1000;
+}
+
+
+
+
 
 
 

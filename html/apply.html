@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body style="display: grid;" >
     <nav class="navbar">
         <div class="contents">
     
@@ -14,12 +14,12 @@
           <!-- various pages -->
           
     <div class="second_content">
-    <li><a href="../index.html">Homepage</a></li>  
-    <li><a href="../html/about.html">About Us</a></li> 
-    <li><a href="../html/courses.html">Programs and Courses</a></li>  
-    <li><a href="../html/investor_page.html">Invest/Partner</a></li>
-    <li><a href="../html/training_format.html">Training Formats</a></li>
-    <li><a href="../html/apply.html">Apply </a></li>
+    <li><a href="../index.html"class="nav-link" >Homepage</a></li>  
+    <li><a href="../html/about.html"class="nav-link" >About Us</a></li> 
+    <li><a href="../html/courses.html"class="nav-link" >Programs and Courses</a></li>  
+    <li><a href="../html/investor_page.html"class="nav-link" >Invest/Partner</a></li>
+    <li><a href="../html/training_format.html"class="nav-link" >Training Formats</a></li>
+    <li><a href="../html/apply.html"class="nav-link" >Apply </a></li>
     </div>
     
     <div class="third_content"></div>
@@ -28,8 +28,38 @@
     
       </nav>
       <br><br>
+      <!-- trial --> <br><br><br><br>
+      <div class="forms-container">
+        <a href="#login" class="login-link">Apply</a><br><br>
+        <div id="login" class="login-form">
+        <form class="investor_form">
+        <!-- Login form fields -->  <br><br><br><br>
+         <p class="org_name"> Name: <input type="text"> </p><br>
+         <p class="org_name">Email: <input type="email"> </p><br>
+         <p class="org_name">Phone : <input type="number"> </p><br>
+         <p class="org_name">Select Course<Select>
+          <option value="">Artificial Intelligence</option>
+          <option value="">Web Technology</option>
+          <option value="">Ideas Incubation</option>
+          <option value="">Mentorship Session</option>
+        </Select></p>
+        
+        </p><br>
+        <button class="submit-button">Submit</button>
+        <img src="loading.gif" class="loading-image">
+        <div class="success-message">Successfully submitted!</div>
+        <span class="check-symbol">&#10004;</span>
+        <div class="back-link"><a href="#">Back to choice</a></div>
+        </form>
+        </div>
+
+
+
+
+      
 
 
     
+      <script src="../js/home.js"></script>
 </body>
 </html>
